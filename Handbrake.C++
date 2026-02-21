@@ -16,13 +16,12 @@ void loop() {
   int raw = analogRead(POT_PIN);
   if (INVERT) raw = 1023 - raw;
 
-  // Clamp
   if (raw < RAW_MIN) raw = RAW_MIN;
   if (raw > RAW_MAX) raw = RAW_MAX;
 
   int axis = map(raw, RAW_MIN, RAW_MAX, 0, 127);
 
-  // Use a stick axis, but keep it positive
+  // Use a stick axis + keep it positive
   controllerData.leftStickX = axis;
 
   setControllerData(controllerData);
