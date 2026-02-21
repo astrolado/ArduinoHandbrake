@@ -99,7 +99,7 @@ Win + R → joy.cpl
 
 Open Properties, move the handbrake.
 
-Then bind it in Assetto Corsa as the Handbrake Axis.
+Then bind it in whichever game as the Handbrake Axis.
 
 UnoJoy library install (Arduino IDE)
 
